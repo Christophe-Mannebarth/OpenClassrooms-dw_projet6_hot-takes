@@ -1,6 +1,12 @@
 # OpenClassrooms - Web Developper - Project6 - HotTakes
 
-## Frontend & Backend - Mannebarth Christophe \_ 09/2022
+https://github.com/Christophe-Mannebarth/OpenClassrooms-dw_projet6_hot-takes
+
+## Frontend by OpenClassrooms (with some small visuals modifications)
+
+## Backend by Mannebarth Christophe \_ 09/2022
+
+---
 
 ## Prerequisites:
 
