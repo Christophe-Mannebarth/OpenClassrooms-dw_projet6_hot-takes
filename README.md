@@ -1,27 +1,77 @@
-# HotTakes
+# OpenClassrooms - Web Developper - Project6 - HotTakes
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.4.
+## Frontend & Backend - Mannebarth Christophe \_ 09/2022
 
-## Development server
+## Prerequisites:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+You will need to have Node (https://nodejs.org/en/) and npm installed locally on your machine.
 
-## Code scaffolding
+You must also first create a MongoDB database (https://www.mongodb.com/atlas/database).
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Author's Note:
 
-## Build
+### To the person who will evaluate this project
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Since I made some cosmetic changes to the frontend (indications in the form fields relating to validation constraints)
 
-## Running unit tests
+it is preferable for this demonstration to use the attached frontend rather than the one on the OpenClassrooms github repository.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Frontend:
 
-## Running end-to-end tests
+### Install & Start
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+Open a terminal in frontend folder then run the following commands
 
-## Further help
+```
+npm i
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+npm start
+```
+
+### To note
+
+_Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files._
+
+## Backend:
+
+### Preparations
+
+Transform the ".env.template" file into an ".env" file by following these guidelines:
+
+    #### Connect to MongoDB ####
+
+    DB_ACCESS = the access to your cluster on MongoDB
+
+    #### Secret Key for the user email encryption (without "#") ####
+
+    EMAIL_KEY = a secret key of your choice for the email
+
+    #### Token key for the user password hashing (without "#") ####
+
+    TOKEN_KEY = a secret key of your choice for the token
+
+    #### Server port ####
+
+    PORT = the port of the backend server (here 3000)
+
+    #### Environment ####
+
+    NODE_ENV = development, testing or production (here development)
+
+### Install & Start
+
+Open a terminal in backend folder then run the following commands
+
+```
+npm i
+
+npm start
+```
+
+### To note
+
+_The "images" folder will be created automatically when creating your first sauce._
+
+_Default port : `3000` (http://localhost:3000)_
+
+Enjoy
