@@ -8,14 +8,6 @@ You will need to have Node (https://nodejs.org/en/) and npm installed locally on
 
 You must also first create a MongoDB database (https://www.mongodb.com/atlas/database).
 
-## Author's Note:
-
-### To the person who will evaluate this project
-
-Since I made some cosmetic changes to the frontend (indications in the form fields relating to validation constraints)
-
-it is preferable for this demonstration to use the attached frontend rather than the one on the OpenClassrooms github repository.
-
 ## Frontend:
 
 ### Install & Start
