@@ -94,12 +94,12 @@ exports.login = async (req, res) => {
   try {
     const emailEncrypted = emailCrypto(req);
     const reqPassword = req.body.password;
-    let user = await User.findOne({ email: emailEncrypted });
+    const user = await User.findOne({ email: emailEncrypted });
     const userPassword = user.password;
-    const valid = bcrypt.compare(reqPassword, userPassword);
+    const valid = await bcrypt.compare(reqPassword, userPassword);
 
     if (!user) {
-      return res.status(401).json({ error: "User not found !" });
+      return res.status(404).json({ error: "User not found !" });
     }
     if (valid) {
       return res.status(200).json({
